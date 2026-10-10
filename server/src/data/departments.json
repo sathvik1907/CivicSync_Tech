@@ -1,0 +1,66 @@
+[
+  {
+    "code": "GCC-ROADS",
+    "name": "Greater Chennai Corporation - Bus Route Roads & Works",
+    "city": "Chennai",
+    "description": "Responsible for paving, resurfacing, and maintenance of major arterial roads, pedestrian footpaths, and flyovers across Chennai.",
+    "contactEmail": "roads.works@chennaicorporation.gov.in",
+    "contactPhone": "+91-44-2538-4520"
+  },
+  {
+    "code": "GCC-SWD",
+    "name": "Greater Chennai Corporation - Stormwater Drainage",
+    "city": "Chennai",
+    "description": "Construction and desilting of integrated stormwater drainage networks and flood mitigation channels across coastal corridors.",
+    "contactEmail": "swd.dept@chennaicorporation.gov.in",
+    "contactPhone": "+91-44-2538-4530"
+  },
+  {
+    "code": "CMWSSB",
+    "name": "Chennai Metropolitan Water Supply and Sewerage Board",
+    "city": "Chennai",
+    "description": "Responsible for municipal water distribution networks, underground sewerage pipeline laying, and pumping stations in Chennai.",
+    "contactEmail": "grievance@cmwssb.tn.gov.in",
+    "contactPhone": "+91-44-4567-4567"
+  },
+  {
+    "code": "TANGEDCO",
+    "name": "Tamil Nadu Generation and Distribution Corporation - Metro",
+    "city": "Chennai",
+    "description": "Underground power cabling, high-tension distribution lines, transformer maintenance, and street electrical safety.",
+    "contactEmail": "support.metro@tangedco.gov.in",
+    "contactPhone": "+91-44-2852-0131"
+  },
+  {
+    "code": "BBMP-ENG",
+    "name": "Bruhat Bengaluru Mahanagara Palike - Road Infrastructure",
+    "city": "Bengaluru",
+    "description": "Major road surfacing, arterial corridors, flyovers, and pedestrian infrastructure development across Bengaluru.",
+    "contactEmail": "commissioner@bbmp.gov.in",
+    "contactPhone": "+91-80-2222-1188"
+  },
+  {
+    "code": "BWSSB",
+    "name": "Bangalore Water Supply and Sewerage Board",
+    "city": "Bengaluru",
+    "description": "Cauvery water pipeline supply networks, drainage, and wastewater treatment infrastructure in Bengaluru.",
+    "contactEmail": "helpline@bwssb.gov.in",
+    "contactPhone": "+91-80-2294-5100"
+  },
+  {
+    "code": "GHMC-ENG",
+    "name": "Greater Hyderabad Municipal Corporation - Engineering Wing",
+    "city": "Hyderabad",
+    "description": "Comprehensive road maintenance program (CRMP), junction improvement, and stormwater drainage in Hyderabad.",
+    "contactEmail": "engineering@ghmc.gov.in",
+    "contactPhone": "+91-40-2111-1111"
+  },
+  {
+    "code": "HMWSSB",
+    "name": "Hyderabad Metropolitan Water Supply and Sewerage Board",
+    "city": "Hyderabad",
+    "description": "Drinking water supply infrastructure, reservoir connectivity, and sewerage rehabilitation across Hyderabad.",
+    "contactEmail": "customer_support@hyderabadwater.gov.in",
+    "contactPhone": "+91-40-2344-2844"
+  }
+]

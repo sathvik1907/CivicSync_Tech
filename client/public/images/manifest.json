@@ -1,0 +1,147 @@
+{
+  "datasetName": "CivicSync Infrastructure Demonstration Image Assets",
+  "generatedAt": "2026-10-10T14:50:00+05:30",
+  "generator": "Google DeepMind Imagen on Antigravity Platform",
+  "provenanceNotice": "All images are explicitly synthetic demonstration illustrations generated for CivicTech hackathon evaluation. They must never be represented as verified official evidence of completed municipal infrastructure works.",
+  "totalAssets": 17,
+  "assets": [
+    {
+      "filename": "/images/projects/road_resurfacing_omr.jpg",
+      "category": "Road resurfacing and asphalt laying",
+      "relatedProjectCode": "CHN-GCC-2026-001",
+      "caption": "Road roller laying dense bituminous macadam asphalt course on Chennai IT Express Highway",
+      "label": "Synthetic Demonstration Illustration",
+      "resolution": "1792x1024"
+    },
+    {
+      "filename": "/images/projects/water_pipeline_excavation.jpg",
+      "category": "Water pipeline excavation and installation",
+      "relatedProjectCode": "CHN-CMW-2026-002",
+      "caption": "Trench excavation and lowering of 600mm CMWSSB ductile iron water feeder pipes",
+      "label": "Synthetic Demonstration Illustration",
+      "resolution": "1792x1024"
+    },
+    {
+      "filename": "/images/projects/stormwater_drain_construction.jpg",
+      "category": "Stormwater drain construction",
+      "relatedProjectCode": "CHN-SWD-2026-003",
+      "caption": "Laying of precast RCC modular box culvert drain with GCC safety barricades",
+      "label": "Synthetic Demonstration Illustration",
+      "resolution": "1792x1024"
+    },
+    {
+      "filename": "/images/projects/footpath_paving.jpg",
+      "category": "Footpath paving and accessibility",
+      "relatedProjectCode": "CHN-GCC-2026-011",
+      "caption": "Laying of interlocking concrete paver blocks and yellow tactile guidance strips",
+      "label": "Synthetic Demonstration Illustration",
+      "resolution": "1792x1024"
+    },
+    {
+      "filename": "/images/projects/streetlight_installation.jpg",
+      "category": "Streetlight installation",
+      "relatedProjectCode": "CHN-GCC-2026-014",
+      "caption": "GCC municipal crew on cherry picker crane installing energy-efficient LED luminaires along Marina promenade",
+      "label": "Synthetic Demonstration Illustration",
+      "resolution": "1792x1024"
+    },
+    {
+      "filename": "/images/projects/underground_cable_work.jpg",
+      "category": "Underground electrical cable work",
+      "relatedProjectCode": "CHN-TNG-2026-004",
+      "caption": "TANGEDCO 33kV high-tension power cable conduit trenching and wooden cable drums",
+      "label": "Synthetic Demonstration Illustration",
+      "resolution": "1792x1024"
+    },
+    {
+      "filename": "/images/projects/drainage_repair_work.jpg",
+      "category": "Drainage repair and desilting",
+      "relatedProjectCode": "CHN-SWD-2026-010",
+      "caption": "CMWSSB suction tanker and desilting jetting unit operating at manhole chamber",
+      "label": "Synthetic Demonstration Illustration",
+      "resolution": "1792x1024"
+    },
+    {
+      "filename": "/images/before-after/pothole_before.jpg",
+      "category": "Before-After Pair (Before)",
+      "pairId": "PAIR_POTHOLE_01",
+      "relatedProjectCode": "CHN-GCC-2026-001",
+      "viewpoint": "OMR Northbound opposite Tidel Park Gate 2",
+      "caption": "Severe pothole cluster with jagged asphalt edges and rainwater accumulation",
+      "label": "Synthetic Demonstration Illustration (Before)"
+    },
+    {
+      "filename": "/images/before-after/road_after.jpg",
+      "category": "Before-After Pair (After)",
+      "pairId": "PAIR_POTHOLE_01",
+      "relatedProjectCode": "CHN-GCC-2026-001",
+      "viewpoint": "OMR Northbound opposite Tidel Park Gate 2",
+      "caption": "Completely resurfaced dark asphalt road with thermoplastic lane striping (exact viewpoint match)",
+      "label": "Synthetic Demonstration Illustration (After)"
+    },
+    {
+      "filename": "/images/before-after/waterlogging_before.jpg",
+      "category": "Before-After Pair (Before)",
+      "pairId": "PAIR_FLOOD_02",
+      "relatedProjectCode": "CHN-SWD-2026-003",
+      "viewpoint": "Kathipara ramp descent facing GST Road",
+      "caption": "Severe 1-foot waterlogging under road underpass during heavy monsoon cloudburst",
+      "label": "Synthetic Demonstration Illustration (Before)"
+    },
+    {
+      "filename": "/images/before-after/drain_after.jpg",
+      "category": "Before-After Pair (After)",
+      "pairId": "PAIR_FLOOD_02",
+      "relatedProjectCode": "CHN-SWD-2026-003",
+      "viewpoint": "Kathipara ramp descent facing GST Road",
+      "caption": "Dry carriageway after construction of wide concrete stormwater drain channels (exact viewpoint match)",
+      "label": "Synthetic Demonstration Illustration (After)"
+    },
+    {
+      "filename": "/images/before-after/footpath_broken.jpg",
+      "category": "Before-After Pair (Before)",
+      "pairId": "PAIR_FOOTPATH_03",
+      "relatedProjectCode": "CHN-GCC-2026-011",
+      "viewpoint": "North Mada Street east view towards temple tank",
+      "caption": "Cracked uneven stone slabs with missing footpath pavers creating walking hazard",
+      "label": "Synthetic Demonstration Illustration (Before)"
+    },
+    {
+      "filename": "/images/before-after/footpath_paved.jpg",
+      "category": "Before-After Pair (After)",
+      "pairId": "PAIR_FOOTPATH_03",
+      "relatedProjectCode": "CHN-GCC-2026-011",
+      "viewpoint": "North Mada Street east view towards temple tank",
+      "caption": "Freshly laid interlock concrete pavers with yellow tactile strip and curbs (exact viewpoint match)",
+      "label": "Synthetic Demonstration Illustration (After)"
+    },
+    {
+      "filename": "/images/issues/pothole_reported.jpg",
+      "category": "Resident Reported Issue Evidence",
+      "relatedReportCode": "RPT-2026-A1091",
+      "caption": "Citizen photograph of hazardous pothole on bus bay road surface",
+      "label": "Demonstration Evidence Photo"
+    },
+    {
+      "filename": "/images/issues/waterlogging_street.jpg",
+      "category": "Resident Reported Issue Evidence",
+      "relatedReportCode": "RPT-2026-B2042",
+      "caption": "Citizen photograph of flooded road underpass junction",
+      "label": "Demonstration Evidence Photo"
+    },
+    {
+      "filename": "/images/issues/footpath_broken_issue.jpg",
+      "category": "Resident Reported Issue Evidence",
+      "relatedReportCode": "RPT-2026-C3088",
+      "caption": "Citizen photograph of cracked broken sidewalk pavement slabs",
+      "label": "Demonstration Evidence Photo"
+    },
+    {
+      "filename": "/images/issues/broken_light.jpg",
+      "category": "Resident Reported Issue Evidence",
+      "relatedReportCode": "RPT-2026-D4019",
+      "caption": "Citizen photograph of non-functional streetlight fixture",
+      "label": "Demonstration Evidence Photo"
+    }
+  ]
+}
