@@ -632,7 +632,7 @@ Public demonstrations should also avoid exposing private resident information or
 
 ## Demo Video
 
-**Demo Video:** https://github.com/sathvik1907/CivicSync_Tech/blob/main/Screen%20Recording%202026-10-10%20205443-compressed.mp4
+**Demo Video:** : https://drive.google.com/drive/u/0/folders/12KALygaEnop2DtyXURrUQz0vYLucWlJc
 
 ---
 
