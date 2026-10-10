@@ -12,11 +12,11 @@ export function Footer() {
                 <Shield className="w-4 h-4" />
               </div>
               <span className="font-extrabold text-base text-white tracking-tight">
-                Civic<span className="text-emerald-400">Sync</span>
+                TransparanceCity
               </span>
             </div>
             <p className="text-slate-400 text-xs max-w-md leading-relaxed">
-              CivicSync empowers citizens with open transparency into municipal infrastructure works,
+              TransparanceCity empowers citizens with open transparency into municipal infrastructure works,
               accountable expenditure audits, explainable inter-departmental coordination, and durable civic problem resolution.
             </p>
             <div className="inline-block bg-slate-800/80 border border-slate-700 rounded-lg px-3 py-1.5 text-[11px] text-amber-300">
@@ -47,7 +47,7 @@ export function Footer() {
 
         <div className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
           <div>
-            &copy; 2026 CivicSync Initiative. Open Source under MIT License.
+            &copy; 2026 TransparanceCity. Open Source under MIT License.
           </div>
           <div className="flex items-center gap-4">
             <span>Synthetic Demonstration Data (Chennai, Bengaluru, Hyderabad)</span>

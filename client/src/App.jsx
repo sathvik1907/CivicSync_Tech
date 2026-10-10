@@ -40,6 +40,17 @@ function ProtectedOfficialRoute({ children }) {
   return children;
 }
 
+function ProtectedCoordinatorRoute({ children }) {
+  const { user, isCoordinator, loading } = useAuth();
+  const location = useLocation();
+
+  if (loading) return null;
+  if (!user || !isCoordinator) {
+    return <Navigate to="/admin" state={{ from: location }} replace />;
+  }
+  return children;
+}
+
 export function App() {
   return (
     <AuthProvider>
@@ -102,9 +113,9 @@ export function App() {
               <Route
                 path="/admin/coordination"
                 element={
-                  <ProtectedOfficialRoute>
+                  <ProtectedCoordinatorRoute>
                     <AdminCoordinationPage />
-                  </ProtectedOfficialRoute>
+                  </ProtectedCoordinatorRoute>
                 }
               />
 

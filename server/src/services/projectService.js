@@ -211,6 +211,11 @@ export async function updateProject(id, updateData, expectedVersion, user) {
       error.statusCode = 403;
       throw error;
     }
+    if (updateData.department !== undefined && String(updateData.department) !== officerDeptId) {
+      const error = new Error('Forbidden: Officers cannot transfer projects to another department.');
+      error.statusCode = 403;
+      throw error;
+    }
   }
 
   // Optimistic concurrency check

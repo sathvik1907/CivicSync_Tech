@@ -38,7 +38,7 @@ export function ConflictAlert({ conflict }) {
               </span>
             </div>
             <p className="text-xs text-slate-600 mt-1">
-              Cross-department project alignment evaluated by CivicSync coordination engine.
+              Cross-department project alignment evaluated by the TransparanceCity coordination engine.
             </p>
           </div>
         </div>

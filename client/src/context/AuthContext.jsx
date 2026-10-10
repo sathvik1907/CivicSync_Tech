@@ -43,22 +43,6 @@ export function AuthProvider({ children }) {
     }
   }
 
-  // Quick 1-click demo login for hackathon evaluation
-  async function quickLogin(roleType) {
-    let email = 'resident@civicsync.demo';
-    let pass = 'ResidentPass123!';
-
-    if (roleType === 'officer') {
-      email = 'officer.gcc@civicsync.demo';
-      pass = 'OfficerPass123!';
-    } else if (roleType === 'coordinator') {
-      email = 'coordinator@civicsync.demo';
-      pass = 'CoordPass123!';
-    }
-
-    return await login(email, pass);
-  }
-
   const value = {
     user,
     loading,
@@ -70,7 +54,6 @@ export function AuthProvider({ children }) {
     login,
     register,
     logout,
-    quickLogin,
     refreshUser: checkAuth
   };
 

@@ -30,6 +30,11 @@ const userSchema = new mongoose.Schema(
       ref: 'Department',
       default: null
     },
+    isDemoAccount: {
+      type: Boolean,
+      default: false,
+      index: true
+    },
     active: {
       type: Boolean,
       default: true
@@ -42,12 +47,17 @@ const userSchema = new mongoose.Schema(
 
 // Method to return safe JSON without password hash
 userSchema.methods.toSafeJSON = function () {
+  const department = this.department;
   return {
     id: this._id.toString(),
     email: this.emailNormalized,
     displayName: this.displayName,
     role: this.role,
-    department: this.department ? this.department.toString() : null,
+    department: department
+      ? department._id
+        ? { id: department._id.toString(), code: department.code, name: department.name }
+        : department.toString()
+      : null,
     active: this.active,
     createdAt: this.createdAt
   };

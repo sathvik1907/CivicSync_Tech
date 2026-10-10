@@ -1,5 +1,5 @@
 {
-  "datasetName": "CivicSync Infrastructure Demonstration Image Assets",
+  "datasetName": "TransparanceCity Infrastructure Demonstration Image Assets",
   "generatedAt": "2026-10-10T14:50:00+05:30",
   "generator": "Google DeepMind Imagen on Antigravity Platform",
   "provenanceNotice": "All images are explicitly synthetic demonstration illustrations generated for CivicTech hackathon evaluation. They must never be represented as verified official evidence of completed municipal infrastructure works.",
@@ -145,3 +145,4 @@
     }
   ]
 }
+

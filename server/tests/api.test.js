@@ -95,7 +95,7 @@ describe('API Integration & Authorization Tests', () => {
     assert.equal(res.status, 200);
     const text = await res.text();
     assert.ok(text.includes('<!DOCTYPE html>'));
-    assert.ok(text.includes('CivicSync'));
+    assert.ok(text.includes('TransparanceCity'));
   });
 
   test('Public registration creates only resident accounts and blocks role escalation', async () => {

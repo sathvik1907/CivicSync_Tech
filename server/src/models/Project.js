@@ -173,7 +173,7 @@ const projectSchema = new mongoose.Schema(
     },
     sourceLabel: {
       type: String,
-      default: 'Synthetic Demonstration Data (CivicSync)'
+      default: 'Synthetic Demonstration Data (TransparanceCity)'
     },
     demoOrigin: {
       type: Boolean,

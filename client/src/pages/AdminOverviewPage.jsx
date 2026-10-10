@@ -119,7 +119,7 @@ export function AdminOverviewPage() {
       </div>
 
       {/* Quick Navigation Panels */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className={`grid grid-cols-1 ${isCoordinator ? 'md:grid-cols-3' : 'md:grid-cols-2'} gap-6`}>
         <div className="bg-white rounded-2xl border border-slate-200 p-6 space-y-4 shadow-sm hover:shadow-md transition-shadow">
           <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
             <Layers className="w-5 h-5" />
@@ -158,7 +158,7 @@ export function AdminOverviewPage() {
           </Link>
         </div>
 
-        <div className="bg-white rounded-2xl border border-slate-200 p-6 space-y-4 shadow-sm hover:shadow-md transition-shadow">
+        {isCoordinator && <div className="bg-white rounded-2xl border border-slate-200 p-6 space-y-4 shadow-sm hover:shadow-md transition-shadow">
           <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
             <ShieldAlert className="w-5 h-5" />
           </div>
@@ -175,7 +175,7 @@ export function AdminOverviewPage() {
             <span>Review Active Conflicts ({stats.conflictsCount})</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
-        </div>
+        </div>}
       </div>
     </div>
   );

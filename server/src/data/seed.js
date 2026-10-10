@@ -14,11 +14,25 @@ import { Report } from '../models/Report.js';
 import { ConflictDecision } from '../models/ConflictDecision.js';
 import { get250mGridCell } from '../utils/geo.js';
 import { getCanonicalPair } from '../utils/coordinationRules.js';
+import { config } from '../config/env.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export async function runSeed() {
+  if (config.nodeEnv === 'production') {
+    throw new Error('Demo seeding is disabled in production.');
+  }
+  if (!config.demoMode || process.env.ALLOW_DEMO_SEED !== 'true') {
+    throw new Error('Demo seeding is disabled. Set DEMO_MODE=true and ALLOW_DEMO_SEED=true only for a database reserved for local/demo data.');
+  }
+  if (
+    config.demoAccountPassword.length < 12 ||
+    /^(SET_A_UNIQUE|REPLACE_WITH|CHANGE_ME|YOUR_)/i.test(config.demoAccountPassword)
+  ) {
+    throw new Error('Set a unique DEMO_ACCOUNT_PASSWORD of at least 12 characters in server/.env before seeding.');
+  }
+
   console.log('[Seed] Connecting to MongoDB...');
   await connectDB();
 
@@ -73,48 +87,56 @@ export async function runSeed() {
   }
 
   console.log('[Seed] Seeding demo users...');
-  const residentHash = await bcrypt.hash('ResidentPass123!', 10);
-  const officerHash = await bcrypt.hash('OfficerPass123!', 10);
-  const coordHash = await bcrypt.hash('CoordPass123!', 10);
+  const demoHash = await bcrypt.hash(config.demoAccountPassword, 12);
 
   const residentUser = await User.findOneAndUpdate(
-    { emailNormalized: 'resident@civicsync.demo' },
+    { emailNormalized: 'resident@transparancecity.demo' },
     {
       $set: {
-        emailNormalized: 'resident@civicsync.demo',
-        passwordHash: residentHash,
-        displayName: 'Priya Ramanathan (Resident)',
+        emailNormalized: 'resident@transparancecity.demo',
+        passwordHash: demoHash,
+        displayName: 'Demo Resident',
         role: 'resident',
+        department: null,
+        isDemoAccount: true,
         active: true
       }
     },
     { upsert: true, new: true }
   );
 
-  const gccDeptId = deptMap.get('GCC-ROADS');
-  const officerUser = await User.findOneAndUpdate(
-    { emailNormalized: 'officer.gcc@civicsync.demo' },
-    {
-      $set: {
-        emailNormalized: 'officer.gcc@civicsync.demo',
-        passwordHash: officerHash,
-        displayName: 'K. Senthil Kumar (Executive Engineer, GCC)',
-        role: 'officer',
-        department: gccDeptId,
-        active: true
-      }
-    },
-    { upsert: true, new: true }
-  );
+  const officerByCode = new Map();
+  for (const department of deptData) {
+    const emailNormalized = `officer.${department.code.toLowerCase()}@transparancecity.demo`;
+    const officer = await User.findOneAndUpdate(
+      { emailNormalized },
+      {
+        $set: {
+          emailNormalized,
+          passwordHash: demoHash,
+          displayName: `Demo Officer — ${department.name}`,
+          role: 'officer',
+          department: deptMap.get(department.code),
+          isDemoAccount: true,
+          active: true
+        }
+      },
+      { upsert: true, new: true }
+    );
+    officerByCode.set(department.code, officer);
+  }
+  const officerUser = officerByCode.get('GCC-ROADS');
 
   const coordUser = await User.findOneAndUpdate(
-    { emailNormalized: 'coordinator@civicsync.demo' },
+    { emailNormalized: 'coordinator@transparancecity.demo' },
     {
       $set: {
-        emailNormalized: 'coordinator@civicsync.demo',
-        passwordHash: coordHash,
-        displayName: 'Dr. Anita Deshmukh (Municipal Chief Coordinator)',
+        emailNormalized: 'coordinator@transparancecity.demo',
+        passwordHash: demoHash,
+        displayName: 'Demo Municipal Coordinator',
         role: 'coordinator',
+        department: null,
+        isDemoAccount: true,
         active: true
       }
     },
@@ -330,13 +352,11 @@ export async function runSeed() {
   }
 
   console.log('----------------------------------------------------');
-  console.log(' CivicSync Seed Complete!');
+  console.log(' TransparanceCity demo seed complete.');
   console.log(' Total Projects Seeded: 18');
   console.log(' Total Reports Seeded:  4');
-  console.log(' Demo Accounts:');
-  console.log('   - Resident:    resident@civicsync.demo    / ResidentPass123!');
-  console.log('   - Officer:     officer.gcc@civicsync.demo / OfficerPass123!');
-  console.log('   - Coordinator: coordinator@civicsync.demo / CoordPass123!');
+  console.log(` Demo accounts provisioned: resident, ${officerByCode.size} department officers, coordinator.`);
+  console.log(' Demo emails are listed on the local development login screen. Password comes from DEMO_ACCOUNT_PASSWORD in server/.env.');
   console.log('----------------------------------------------------');
 }
 

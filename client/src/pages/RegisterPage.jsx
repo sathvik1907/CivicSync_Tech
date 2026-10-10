@@ -44,7 +44,7 @@ export function RegisterPage() {
             Create Resident Account
           </h2>
           <p className="text-xs text-slate-500">
-            Join CivicSync to report infrastructure hazards, track civic issues, and receive official updates
+            Join TransparanceCity to report infrastructure hazards, track civic issues, and receive official updates
           </p>
         </div>
 
