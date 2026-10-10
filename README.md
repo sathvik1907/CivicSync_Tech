@@ -140,6 +140,37 @@ Coordination indicators support human review; they do not automatically establis
 * Protect sensitive resident reports and evidence.
 * Apply CSRF protection where required by the authentication architecture.
 
+## Department Officer Demo Accounts
+
+TransparanceCity supports department-specific officer accounts. Each officer is associated with a particular department and can manage the projects and civic reports assigned to that department.
+
+The following seeded officer email addresses are available for demonstration and testing:
+
+Greater Chennai Corporation (GCC) – Roads | `officer.gcc-roads@transparancecity.demo` |
+Greater Chennai Corporation (GCC) – Stormwater Drainage (SWD) | `officer.gcc-swd@transparancecity.demo` |
+Chennai Metropolitan Water Supply and Sewerage Board (CMWSSB) | `officer.cmwssb@transparancecity.demo` |
+Tamil Nadu Generation and Distribution Corporation (TANGEDCO) | `officer.tangedco@transparancecity.demo` |
+Bruhat Bengaluru Mahanagara Palike (BBMP) – Engineering | `officer.bbmp-eng@transparancecity.demo` |
+Bangalore Water Supply and Sewerage Board (BWSSB) | `officer.bwssb@transparancecity.demo` |
+Greater Hyderabad Municipal Corporation (GHMC) – Engineering | `officer.ghmc-eng@transparancecity.demo` |
+Hyderabad Metropolitan Water Supply and Sewerage Board (HMWSSB) | `officer.hmwssb@transparancecity.demo` |
+
+### How to Log In as a Department Officer
+
+1. Open the TransparanceCity application.
+2. Navigate to the **Sign In** page.
+3. Enter one of the department officer email addresses listed above.
+4. Enter the corresponding demo password configured by the project's seed script.
+5. Sign in to access the department officer workspace.
+
+### Department-Based Access Control
+
+- Each officer account is associated with its designated department.
+- Officers can manage only the projects and reports permitted by their department-level permissions.
+- Department access restrictions must be enforced by the backend API, not just by the frontend interface.
+- Municipal coordinators have a separate role for reviewing cross-department coordination issues.
+- These accounts are intended for demonstration and testing only.
+
 
 ---
 
