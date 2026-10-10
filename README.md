@@ -603,22 +603,6 @@ Public demonstrations should also avoid exposing private resident information or
 
 **Demo Video:** `ADD_YOUR_DEMO_VIDEO_URL`
 
-The demonstration video should be between **2 and 5 minutes** long.
-
-Recommended video structure:
-
-1. Introduce TransparanceCity and the problem it addresses.
-2. Demonstrate public project discovery and the interactive map.
-3. Show project details, schedules, and progress information.
-4. Demonstrate civic issue reporting and report tracking.
-5. Show department-specific project management.
-6. Demonstrate project coordination candidates and coordinator decisions.
-7. Summarize the platform's benefits and future scope.
-
-Use actual working features in the demonstration. Clearly identify synthetic data where applicable.
-
-The demo video must also be included in the GitHub repository, as required by the hackathon submission guidelines.
-
 ---
 
 ## Team Members
@@ -627,10 +611,22 @@ Meet the team behind TransparanceCity.
 
 Replace the example names, profile links, and screenshot paths below with your actual team information.
 
-| 1      | M.V.N.Sathvik | Project Lead / Full-Stack Development | [https://github.com/sathvik1907](GITHUB_URL) | [https://www.linkedin.com/in/venkata-naga-sathvik-miriyam-1b0882340?utm_source=share_via&utm_content=profile&utm_medium=member_android](LINKEDIN_URL) |
-| 2      | A.Bhanu Venkata Naga Sai | Frontend Development                  | [https://github.com/bhanu07052007](GITHUB_URL) | [https://www.linkedin.com/in/bhanu-aravapalli/](LINKEDIN_URL)
-| 3      | Shashank Reddy | Backend Development                   | [github.com/Shashankreddy-12](GITHUB_URL_3) | [linkedin.com/in/shashank-reddy12](LINKEDIN_URL)
-| 4      | N.Jagan Mohan Reddy | Database and API Integration          | [https://github.com/NJMReddy](GITHUB_URL_4) | [https://www.linkedin.com/in/jagan-mohan-reddy-namburi-8843a9361/](LINKEDIN_URL)
+1)M.V.N.Sathvik 
+Project Lead
+[https://github.com/sathvik1907](GITHUB_URL)
+[https://www.linkedin.com/in/venkata-naga-sathvik-miriyam-1b0882340?utm_source=share_via&utm_content=profile&utm_medium=member_android](LINKEDIN_URL) 
+2) A.Bhanu Venkata Naga Sai
+Frontend Development   
+[https://github.com/bhanu07052007](GITHUB_URL)
+[https://www.linkedin.com/in/bhanu-aravapalli/](LINKEDIN_URL)
+3)Shashank Reddy 
+Backend Development                  
+[github.com/Shashankreddy-12](GITHUB_URL) 
+[linkedin.com/in/shashank-reddy12](LINKEDIN_URL)
+4)N.Jagan Mohan Reddy 
+Database and API Integration         
+[https://github.com/NJMReddy](GITHUB_URL) 
+[https://www.linkedin.com/in/jagan-mohan-reddy-namburi-8843a9361/](LINKEDIN_URL)
 
 
 ### Team Contributions
