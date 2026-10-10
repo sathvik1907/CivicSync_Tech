@@ -277,14 +277,6 @@ Before presenting CivicSync as a completed demonstration, verify:
 - [ ] Coordination candidates and community insights load.
 - [ ] Project images and before-and-after comparisons work.
 - [ ] Production deployment is tested, if deployed.
-
-## Project Documentation
-
-- `PROJECT_PLAN.md` — Approved requirements and architecture.
-- `TASKS.md` — Implementation tasks and verification status.
-- `TEST_PLAN.md` — Required testing scenarios.
-- `CURRENT_STATE.md` — Verified implementation state.
-- `DECISIONS.md` — Architecture decisions and accepted risks.
 - `AGENTS.md` — Development and verification instructions.
 
 ## License
